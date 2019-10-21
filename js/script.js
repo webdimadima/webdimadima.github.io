@@ -43,6 +43,8 @@ try {
   });
 
 
+// modal map code
+
   var mapLink = document.querySelector(".contacts-map");
 
   var mapPopup = document.querySelector(".modal-map");

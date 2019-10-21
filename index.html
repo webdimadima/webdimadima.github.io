@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Девайс интернет-магазин гаджетов</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <div class="container">
@@ -17,7 +17,6 @@
           <ul class="user-nav">
             <li class="search-block">
               <form class="search-form" action="https://echo.htmlacademy.ru" method="GET">
-
                 <input type="search" name="search" id="search-field" placeholder="Поиск по сайту">
                 <label for="search-field"><span class="visually-hidden">Поиск</span></label>
                 <button class="search-button" type="submit">Найти</button>
@@ -29,7 +28,7 @@
           </ul>
           <ul class="site-nav">
             <li>
-              <a href="">Каталог товаров</a>
+              <a class="link-link" href="catalog.html">Каталог товаров</a>
               <ul class="sub-menu">
                 <li>
                   <a href="">Виртуальная реальность</a>
@@ -58,14 +57,14 @@
 
         <!-- Начало блока slider-->
         <section class="slider">
-          <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
-          <input class="visually-hidden" type="radio" id="product-2" name="toggle">
-          <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+          <input class="slide-input visually-hidden" type="radio" id="slide-1" name="toggle" checked>
+          <input class="slide-input visually-hidden" type="radio" id="slide-2" name="toggle">
+          <input class="slide-input visually-hidden" type="radio" id="slide-3" name="toggle">
 
           <div class="slider-controls">
-            <label class="controls-item controls-item--1" for="product-1">Первый</label>
-            <label class="controls-item controls-item--2" for="product-2">Второй</label>
-            <label class="controls-item controls-item--3" for="product-3">Третий</label>
+            <label class="controls-item controls-item--1" for="slide-1">Первый</label>
+            <label class="controls-item controls-item--2" for="slide-2">Второй</label>
+            <label class="controls-item controls-item--3" for="slide-3">Третий</label>
           </div>
 
           <ul class="slider-list">
@@ -151,6 +150,7 @@
         <!-- Конец блока slider-->
 
         <section class="popular">
+          <h2 class="visually-hidden">Категории товаров</h2>
           <ul class="popular-list">
             <li class="popular-item">
               <a href="">
@@ -195,9 +195,9 @@
       <section class="tab-slider">
         <div class="tab-slider-wrapper container">
           <h2 class="visually-hidden">Информация по доставке, гарантии и кредиту</h2>
-          <input class="visually-hidden" type="radio" name="tab" id="tab-1" checked>
-          <input class="visually-hidden" type="radio" name="tab" id="tab-2">
-          <input class="visually-hidden" type="radio" name="tab" id="tab-3">
+          <input class="slide-input visually-hidden" type="radio" name="tab" id="tab-1" checked>
+          <input class="slide-input visually-hidden" type="radio" name="tab" id="tab-2">
+          <input class="slide-input visually-hidden" type="radio" name="tab" id="tab-3">
           <div class="tab-slider-controls">
             <label class="tab-control tab-control-1 button" for="tab-1">Доставка</label>
             <label class="tab-control tab-control-2 button" for="tab-2">Гарантия</label>
@@ -367,12 +367,13 @@
 
     <section class="modal modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1262.2755616632735!2d37.528789171089514!3d55.68691391323381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1571227478166!5m2!1sru!2sru" width="960" height="559" style="border:0;" allowfullscreen=""></iframe>
       <img src="img/map-big.jpg" width="960" height="559" alt="Интернет-магазин 'Девайс' находится по адресу ул. Строителей, д. 15, Москва">
       <button class="modal-close" type="button">
         <span class="visually-hidden">Закрыть</span>
       </button>
     </section>
 
-  <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>
